@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hundred Buttons</title>
+    <script>
+        function executeCode(buttonId) {
+            if (buttonId === 'specialButton') {
+                // Code to execute when the special button is clicked
+                console.log("Special button was clicked!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hundred Buttons</h1>
+    <p>Click the buttons below:</p>
+
+    <!-- Generating a hundred buttons -->
+    <div>
+        <!-- One special button -->
+        <button onclick="executeCode('specialButton')">Special Button</button>
+
+        <!-- 99 regular buttons -->
+        <!-- Change the count as needed -->
+        <!-- For simplicity, these buttons won't trigger any specific code -->
+        <?php for ($i = 0; $i < 99; $i++) { ?>
+            <button onclick="executeCode('regularButton')">Regular Button</button>
+        <?php } ?>
+    </div>
+
+    <!-- Your regular code goes here -->
+
+</body>
+</html>
+<a href="haunted school.html">Play the Game</a>
